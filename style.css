@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: #bdb3aa;
   --secondary-color: #4f4f57;
@@ -129,11 +133,33 @@ li {
   margin-top: 4rem;
 }
 
+#social-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 11rem;
+  margin-top: 0rem;
+  margin-bottom: 4rem;
+  
+}
+
+
+
 #profile {
   width: 400px;
   height: 390px;
   border-radius: 50%;
   transform: scaleX(-1);
+}
+
+#work{
+  padding-top: 23px;
+  width: 100%;
 }
 
 .project{
@@ -163,16 +189,30 @@ li {
  }
 
  .project img {
-  width: auto;
+  /* width: auto; */
   height: 300px;
   border-radius: 10px;
   box-shadow: 10px 10px 44px -5px rgba(0,0,0,0.71);
  }
 
+ .see-all {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+ }
+
+ .see-all a{
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0.7rem 1.5rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 0.4rem;
+ }
+
  #wid {
   margin-top: 10rem;
   width: 100%;
-  height: 100vh;
+  margin-bottom: 10rem;
  }
 
  #wid h2 {
@@ -208,7 +248,7 @@ li {
 
 
  .skill p {
-  width: 200px;
+  width: 12.5rem;
   text-align: center;
   font-weight: 200;
   color: var(--secondary-color);
@@ -232,18 +272,20 @@ li {
  }
 
  #hi button {
+  display: block;
   font-size: 1.5rem;
   font-weight: 200;
   padding: 0.7rem 2rem;
-  width: 16.6rem;
-  transform: translateX(630px);
+  min-width: 16.6rem;
+  margin: 0 auto;
   margin-bottom: 5rem;
  }
 
  hr {
+  display: block;
  border: 1px solid var(--primary-color);
  width: 300px;
- transform: translateX(610px);
+ margin: 0 auto;
  }
 
  footer p {
@@ -254,3 +296,49 @@ li {
   color: var(--secondary-color);
   margin: 1rem;
  }
+
+
+ @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+
+  .info-container p{
+    width: auto;
+  }
+
+
+
+  #profile{
+    display: none;
+  }
+
+  .project{
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .project img {
+    width: 18.75rem;
+    height: 12.5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 44px -5px rgba(0,0,0,0.71);
+   }
+
+   .skills-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+   }
+
+    #hi h2{
+      font-size: 3rem;
+    }
+
+    #hi h3 {
+      font-size: 1rem;
+    }
+   
+
+  }
+
