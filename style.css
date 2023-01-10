@@ -190,7 +190,6 @@ li {
  }
 
  .project img {
-  /* width: auto; */
   height: 300px;
   border-radius: 10px;
   box-shadow: 10px 10px 44px -5px rgba(0,0,0,0.71);
@@ -295,7 +294,7 @@ li {
   font-weight: 200;
   font-size: .7rem;
   color: var(--secondary-color);
-  margin: 1rem;
+  margin: 1rem 0;
  }
 
 
@@ -329,22 +328,32 @@ li {
     flex-direction: column-reverse;
     justify-content: center;
     gap: 70px;
+    border-radius: 0;
+    padding: 5rem 4rem;
   }
 
   .project img {
     width: 100%;
-    height: 12.5;
     border-radius: 10px;
     box-shadow: 10px 10px 44px -5px rgba(0,0,0,0.71);
    }
 
    .project button{
-    
+    font-size: 1rem;
+   }
+
+   .project h3{
+    font-size: 1.2rem;
+   }
+
+   .project h2{
+    font-size: 2.2rem;
    }
 
    .skills-container{
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 10rem;
    }
 
