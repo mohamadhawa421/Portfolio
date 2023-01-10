@@ -216,7 +216,7 @@ li {
  }
 
  #wid h2 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 900;
   margin-bottom: 0.7rem;
   text-align: center;
@@ -302,6 +302,12 @@ li {
   /* For mobile phones: */
 
 
+#nav{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
   header{
     width: 100%;
   }
@@ -313,6 +319,33 @@ li {
   .info-container{
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
+  }
+
+  .info-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .info-container button {
+    margin: 3rem auto 0 auto ;
+    display: block;
+  }
+
+  .info-container p{
+    width: auto;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  .info-container a{
+    text-decoration: none;
+  }
+
+  #social ul{
+    margin: 3rem auto 0 auto ;
   }
 
   #email-btn{
@@ -329,7 +362,7 @@ li {
     justify-content: center;
     gap: 70px;
     border-radius: 0;
-    padding: 5rem 4rem;
+    padding: 3rem 2rem;
   }
 
   .project img {
