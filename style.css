@@ -305,7 +305,8 @@ li {
 #nav{
   display: flex;
   justify-content: center;
-  text-align: center;
+  margin-left: 0.48rem;
+
 }
 
   header{
@@ -367,6 +368,7 @@ li {
 
   .project img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 10px 10px 44px -5px rgba(0,0,0,0.71);
    }
